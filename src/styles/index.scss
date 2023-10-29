@@ -1,0 +1,16 @@
+@import "_reset";
+@import "_todo";
+@import "_tabs";
+@import "_data";
+@import "_info";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 5px;
+
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
