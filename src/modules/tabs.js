@@ -21,14 +21,14 @@ class TabPages {
   }
 
   init = () => {
-    const Butoonlist = this.doc.Buttons;
-    const TabsList   = this.doc.Tabs;
-    Butoonlist.forEach(function (button) {
+    const butoonList = this.doc.Buttons;
+    const tabsList   = this.doc.Tabs;
+    butoonList.forEach(function (button) {
         button.addEventListener("click", function() {
             let tabId = button.id;
-            Butoonlist.forEach(function (element) {
+            butoonList.forEach(function (element) {
                 switchActive(element,tabId);
-                TabsList.forEach(function (tabelement) {
+                tabsList.forEach(function (tabelement) {
                     switchActive(tabelement,`page_${tabId}`);
                 });    
             });
