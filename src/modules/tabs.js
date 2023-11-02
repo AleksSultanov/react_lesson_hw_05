@@ -1,8 +1,8 @@
 // Модуль компанента Таб
 class DocumentTab {
     constructor() {
-      this.Buttons = document.querySelectorAll(".tabpage__sheets-btn");
-      this.Tabs = document.querySelectorAll(".tabpage__container-block");
+      this.buttons = document.querySelectorAll(".tabpage__sheets-btn");
+      this.tabs = document.querySelectorAll(".tabpage__container-block");
     }
   }  
 
@@ -21,8 +21,8 @@ class TabPages {
   }
 
   init = () => {
-    const butoonList = this.doc.Buttons;
-    const tabsList   = this.doc.Tabs;
+    const butoonList = this.doc.buttons;
+    const tabsList   = this.doc.tabs;
     butoonList.forEach(function (button) {
         button.addEventListener("click", function() {
             let tabId = button.id;
