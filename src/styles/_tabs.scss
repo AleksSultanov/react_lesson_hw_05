@@ -1,0 +1,45 @@
+.tabpage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-top: 200px;
+
+  &__sheets {
+    display: flex;
+    justify-content: flex-start;
+    
+    &-btn{
+      border-radius: 0.4em 0.4em 0 0;
+      margin-right: 2px; 
+    }
+  
+  }  
+  
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__container-block {
+    background-color: azure;
+    width: 100%;
+    max-width: 520px;
+    padding: 20px;
+    border: 1px solid;
+    display: none;
+    &.active{
+      display: block;
+    }
+  }  
+}
+
+.active {
+  background-color: azure;
+}
+
+.container__title {
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+}
